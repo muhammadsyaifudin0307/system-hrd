@@ -1,0 +1,414 @@
+/* General Styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap");
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Dashboard Title */
+.title-dashboard {
+  line-height: 1.2;
+  font-weight: 900;
+  font-size: 60px;
+  color: black;
+  margin-left: 1rem;
+}
+
+/* Layout Classes */
+.position-relative {
+  display: inline-block;
+}
+
+.no-border-radius {
+  border-radius: 0 !important;
+}
+
+.card-bagian {
+  margin-left: 25%;
+}
+
+.border-line {
+  position: absolute;
+  left: 107px;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #999999;
+  margin-bottom: 8px;
+}
+
+.hrd-title {
+  color: #999999;
+  font-size: 1.25rem; /* Default size */
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+/* Button Styles */
+.other-button {
+  font-family: "Poly", serif;
+  font-size: 1.25rem; /* Default size */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Card Styles */
+.card {
+  width: 16rem;
+  height: 20rem;
+  min-height: 1rem;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.card-title {
+  line-height: 1.2;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.total {
+  font-weight: 900 !important;
+  font-size: 1rem;
+}
+
+.list {
+  font-size: 10px;
+  padding-left: 15px;
+  margin: 0;
+}
+
+/* Chart Placeholder */
+.chart-placeholder {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Custom Margin */
+.mt-custom {
+  margin-top: 100px;
+}
+
+.d-flex .total-text {
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+.custom-card .chart-placeholder {
+  max-height: 150px;
+  height: 50%;
+  width: 100%;
+}
+
+/* Line Divider */
+.line {
+  width: 15%;
+  height: 1px;
+  background-color: #ddd;
+  position: relative;
+  top: -10px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .hrd-title {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .total {
+    font-size: 0.9rem;
+  }
+
+  .list {
+    font-size: 9px;
+    margin: 0;
+  }
+
+  .chart-placeholder {
+    height: 100px;
+    max-height: 120px;
+  }
+
+  .border-line {
+    left: 108px;
+    right: 0;
+  }
+
+  .title-dashboard {
+    font-size: 2.5rem; /* Smaller font size on mobile */
+    margin-left: 0;
+  }
+
+  .no-border-radius {
+    margin-bottom: 20px;
+  }
+
+  .card-bagian {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .other-button {
+    font-size: 1.1rem; /* Reduce size of Explore Case Study button */
+    justify-content: center;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hrd-title {
+    font-size: 1.15rem; /* Slightly larger for tablet screens */
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .title-dashboard {
+    font-size: 3rem; /* Adjust size for tablet screens */
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .other-button {
+    font-size: 1.2rem; /* Adjust button size */
+    margin-left: 1rem;
+  }
+} /* Responsive Styles for Desktop (Large Screens) */
+@media (min-width: 992px) {
+  .hrd-title {
+    font-size: 1.25rem; /* Default for larger screens */
+  }
+
+  .title-dashboard {
+    font-size: 3.75rem; /* Default size */
+  }
+
+  .other-button {
+    font-size: 1.25rem; /* Default size */
+  }
+}
+
+/* Responsive Styles for 1920px and above */
+@media (min-width: 1920px) {
+  .title-dashboard {
+    font-size: 4.5rem;
+    padding-left: 50px;
+  }
+  .hrd-title {
+    padding-left: 50px;
+    font-size: 1.5rem; /* Larger font size for big screens */
+  }
+  .card {
+    width: 20rem;
+    height: 25rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .total {
+    font-size: 1.2rem;
+  }
+
+  .chart-placeholder {
+    max-height: 300px;
+  }
+
+  .border-line {
+    left: 157px;
+  }
+
+  .card-bagian {
+    margin-left: 150px;
+  }
+
+  .other-button {
+    padding-left: 50px;
+    font-size: 1.5rem; /* Increase size of button */
+  }
+}
+
+/* Additional Styles for 1440px */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .title-dashboard {
+    font-size: 4rem;
+  }
+  .hrd-title {
+    font-size: 1.35rem;
+  }
+  .other-button {
+    font-size: 1.35rem;
+  }
+
+  .card {
+    width: 18rem;
+    height: 22rem;
+  }
+
+  .chart-placeholder {
+    max-height: 250px;
+  }
+
+  .card-bagian {
+    margin-left: 100px;
+  }
+}
+
+/* General Mobile and Tablet Adjustments */
+@media (max-width: 1024px) {
+  .px-5 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .ms-4 {
+    margin-left: 1rem;
+  }
+
+  .mt-custom {
+    margin-top: 50px;
+  }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card,
+.title-dashboard,
+.position-relative,
+.border-line,
+.other-button,
+.chart-placeholder,
+.list,
+.total,
+.total-text,
+.line {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+  animation-delay: 0s;
+}
+
+.card {
+  animation-delay: 0.2s;
+}
+
+.title-dashboard {
+  animation-delay: 0s;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.dark-mode .hrd-title {
+  color: #ffffff;
+}
+.dark-mode .title-dashboard {
+  color: #ffffff;
+}
+.dark .dark-mode .border-line {
+  background-color: #555555;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .card-title {
+  color: #b0b0b0;
+}
+
+.dark-mode .total {
+  color: #ffffff;
+}
+
+.dark-mode .list {
+  color: #b0b0b0;
+}
+
+.dark-mode .other-button {
+  color: #ffffff;
+}
+
+.dark-mode .chart-placeholder {
+  background-color: #1e1e1e;
+  border: 1px solid #555555;
+}
+
+.dark-mode .line {
+  background-color: #555555;
+}
+
+/* Dark Mode Responsive Styles */
+@media (max-width: 768px) {
+  .dark-mode .border-line {
+    background-color: #555555;
+  }
+}
+
+@media (min-width: 1920px) {
+  .dark-mode .border-line {
+    background-color: #555555;
+  }
+}
+
+/* Fade In Animation for Dark Mode */
+.dark-mode .card,
+.dark-mode .title-dashboard,
+.dark-mode .position-relative,
+.dark-mode .border-line,
+.dark-mode .other-button,
+.dark-mode .chart-placeholder,
+.dark-mode .list,
+.dark-mode .total,
+.dark-mode .total-text,
+.dark-mode .line {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+  animation-delay: 0s;
+}
+
+.dark-mode .card {
+  animation-delay: 0.2s;
+}
+
+.dark-mode .title-dashboard {
+  animation-delay: 0s;
+}

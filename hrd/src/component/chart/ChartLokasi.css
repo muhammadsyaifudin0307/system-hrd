@@ -1,0 +1,24 @@
+.bar-container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 15px; /* Sesuaikan dengan lebar container */
+  height: 120px; /* Sesuaikan dengan tinggi container */
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: flex-end; /* Pastikan bar dimulai dari bagian bawah */
+}
+.pad {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.bar {
+  width: 100%;
+  height: 50%; /* Ini bisa disesuaikan berdasarkan nilai data yang kamu ingin tampilkan */
+  background-color: #4caf50; /* Contoh warna bar */
+}
+
+.label {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+}

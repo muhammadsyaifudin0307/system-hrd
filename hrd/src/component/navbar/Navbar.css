@@ -1,0 +1,168 @@
+/* Link Font Navbar Logo */
+@import url("https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap");
+/* Link Font Navbar */
+@import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poly:ital@0;1&display=swap");
+
+/* Navbar Brand Style */
+.nav-brand {
+  font-family: "Poly", serif;
+  font-weight: 400;
+  font-size: 30px !important;
+  margin-left: -55px;
+}
+.icon-nav {
+  margin-right: -60px;
+}
+.nav-brand .nav-brand-second {
+  position: relative;
+  display: inline-block;
+  font-family: "Poly", serif;
+}
+
+.nav-brand .nav-brand-second::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  height: 1px;
+  background-color: black;
+  width: 100%;
+}
+
+/* Navbar List */
+.nav-list {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: black !important;
+}
+
+/* Navbar Links */
+.nav-list .nav-link {
+  font-family: "Poltawski Nowy", serif;
+  font-weight: 400;
+  font-size: 18px !important;
+  color: #000 !important;
+  position: relative;
+  padding-bottom: 5px;
+}
+.nav-link {
+  position: relative; /* Agar kita bisa menggunakan pseudo-element */
+  padding-bottom: 5px; /* Memberi ruang untuk border di bawah */
+  color: #000; /* Warna default teks */
+  text-decoration: none; /* Menghapus garis bawah default */
+  transition: color 0.3s ease; /* Transisi untuk warna link */
+}
+
+.nav-list .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; /* Tinggi border */
+  background: transparent; /* Awalnya tidak terlihat */
+  transition: background 0.3s ease, transform 0.3s ease; /* Transisi untuk border dan transformasi */
+  transform: scaleX(0); /* Skala horizontal awalnya 0 */
+}
+
+.nav-list .nav-link:hover::after {
+  background: #000; /* Ganti dengan warna hover */
+  transform: scaleX(1); /* Skala menjadi 1 saat hover */
+}
+
+.nav-list .nav-link.active::after {
+  background: #000; /* Ganti dengan warna untuk link aktif */
+  transform: scaleX(1); /* Pastikan skala aktif tetap 1 */
+}
+
+/* Untuk memberikan efek transisi yang lebih halus pada hover */
+.nav-listy .nav-link:hover {
+  color: #000; /* Ganti warna teks saat hover */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .nav-brand {
+    margin-left: 5px;
+  }
+  .nav-list {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Reduce gap between items */
+    align-items: center; /* Center items */
+    font-size: 16px !important; /* Smaller font size on mobile */
+  }
+}
+
+/* Media Query for Large Screens */
+@media (min-width: 1920px) {
+  .nav-list {
+    gap: 60px; /* Increase gap between items */
+    font-size: 20px !important; /* Larger font size for large screens */
+  }
+  .nav-brand {
+    font-size: 35px !important; /* Larger brand font on large screens */
+  }
+}
+
+/* Navbar links in light mode */
+.nav-link {
+  color: black !important;
+}
+
+/* Navbar brand text in light mode */
+.nav-brand,
+.nav-brand-second {
+  color: black !important;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #202020;
+  color: #f5f5f5;
+}
+
+/* Navbar in dark mode */
+body.dark-mode .navbar {
+  background-color: #202020;
+}
+
+/* Navbar link text in dark mode */
+body.dark-mode .nav-link {
+  color: #f5f5f5 !important;
+}
+body.dark-mode .nav-brand .nav-brand-second::after {
+  background-color: #f5f5f5;
+}
+
+/* Navbar brand text in dark mode */
+body.dark-mode .nav-brand,
+body.dark-mode .nav-brand-second {
+  color: #f5f5f5 !important;
+}
+
+/* Navbar link underline in dark mode */
+body.dark-mode .nav-link::after {
+  background-color: #f5f5f5;
+}
+
+/* Hover Effect for Dark Mode Links */
+body.dark-mode .nav-link:hover::after {
+  background-color: #f5f5f5;
+}
+body.dark-mode .nav-list .nav-link.active::after {
+  background: #f5f5f5;
+}
+/* Mobile View Dark Mode */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  body.dark-mode .nav-link {
+    color: #f5f5f5 !important;
+  }
+}

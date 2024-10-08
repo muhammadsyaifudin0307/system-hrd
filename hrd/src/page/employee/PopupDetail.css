@@ -1,0 +1,70 @@
+.col-divider {
+  border-right: 1px solid #ddd; /* Border right untuk kolom pertama */
+  padding-right: 10px; /* Mengurangi padding di sisi kanan */
+}
+.ms-auto {
+  margin-left: auto !important;
+}
+.no-padding-left {
+  padding-left: 15px; /* Menyesuaikan padding kiri untuk kolom kedua */
+}
+
+.modal-header {
+  background-color: #343a40; /* Latar belakang gelap untuk header */
+  color: white; /* Warna teks header */
+  padding: 10px 15px; /* Mengurangi padding agar lebih kompak */
+}
+.modal-body p {
+  line-height: 1.5;
+}
+
+.modal-dialog {
+  width: 75vw !important;
+  max-height: 75vh !important; /* Tinggi maksimal modal */
+  margin: auto !important; /* Memastikan modal tetap di tengah */
+}
+
+.modal-footer {
+  padding: 10px 15px; /* Mengurangi padding footer */
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column; /* Menumpuk item secara vertikal */
+  gap: 5px; /* Jarak antar item */
+}
+
+.right-section {
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Menyusun item dari atas */
+  align-items: flex-end; /* Mengarahkan item ke kanan */
+}
+
+.detail-item {
+  margin-bottom: 8px; /* Memberi jarak vertikal antar elemen detail */
+  display: flex;
+  flex-direction: column; /* Menyusun strong dan span secara vertikal */
+}
+
+.detail-item span {
+  color: #555; /* Gaya teks untuk span */
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 90vw !important; /* Lebar modal lebih besar di layar kecil */
+  }
+  .modal-header {
+    flex-direction: column; /* Menyusun elemen header secara vertikal di layar kecil */
+    align-items: flex-start; /* Elemen diatur di bagian kiri */
+    padding: 20px; /* Padding yang lebih kecil di layar kecil */
+  }
+  .right-section {
+    align-items: flex-start; /* Elemen di kanan menjadi kiri untuk layar kecil */
+    padding: 10px 0; /* Mengurangi padding di layar kecil */
+  }
+}
