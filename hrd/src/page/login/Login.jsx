@@ -4,10 +4,17 @@ import { AiOutlineUser } from "react-icons/ai";
 import { FiLock } from "react-icons/fi";
 import { useNavigate } from 'react-router-dom';
 import './LoginForm.css';
+import PropTypes from 'prop-types';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Login = ({ setIsLoggedIn }) => { // Menerima prop setIsLoggedIn
+const Login = ({ setIsLoggedIn }) => { 
+  
+Login.propTypes = {
+  setIsLoggedIn: PropTypes.func.isRequired,
+};
+  // Menerima prop setIsLoggedIn
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isUsernameFocused, setIsUsernameFocused] = useState(false);
@@ -85,6 +92,7 @@ const Login = ({ setIsLoggedIn }) => { // Menerima prop setIsLoggedIn
     </Container>
     
   );
+  
 };
 
 export default Login;

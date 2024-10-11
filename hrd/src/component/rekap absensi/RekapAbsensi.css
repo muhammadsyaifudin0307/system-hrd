@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap");
+
+  *::-webkit-scrollbar {
+    display: none; /* Untuk Chrome, Safari, dan Edge */
+  }
+  
+
+  .table-bordered {
+    font-family: 'Poltawski Nowy';
+    border-left: 2px solid #000;  /* Left border */
+    border-right: 2px solid #000; /* Right border */
+    border-top: 2px solid #000;   /* Top border */
+    text-align: center;
+    border-bottom: 2px solid #000; /* Bottom border */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure the corners are clipped */
+    box-shadow: 0px 0 0 1px #ccc; /* Simulates a colored border around the radius */
+  }
+  
+  .table-bordered th,
+  .table-bordered td {
+    border: none; /* No borders for individual cells */
+  }
+  
+  .table-header {
+    font-family: 'Poltawski Nowy';
+    background-color: #f8f9fa;
+    border-radius: 10px 10px 0 0; /* Rounded corners for the header */
+    overflow: hidden;
+  }
+ 
+  .bulan-bt {
+    display: flex;
+    justify-content: space-between;
+    padding: 0; /* Hilangkan padding jika ada */
+    margin: 0 auto; /* Center secara horizontal */
+  
+  }
+  
+ 
+  .bulan-bt .btn {
+    flex-grow: 1; /* Agar setiap tombol mengambil ruang yang sama */
+    margin: 0 5px; /* Sedikit margin antara tombol */
+    padding: 5px;    
+    max-width: 150px; /* Optional: Limit max width of buttons */
+    font-family: 'Poltawski Nowy';
+    text-align: center;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s;
+  }
+
+  
+  @media (max-width: 768px) {
+    .bulan-bt .btn {
+      width: calc(100% / 6 - 10px); /* 6 tombol per baris untuk layar menengah */
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bulan-bt .btn {
+      width: calc(100% / 4 - 10px); /* 4 tombol per baris untuk layar kecil */
+      margin-bottom: 5px;
+    }
+  }
+  
+  .bulan-bt .btn:hover {
+    background-color: #b8b8b8; /* Efek hover */
+    color: #f8f9fa;
+  }
+  
+  .bulan-bt .btn.active {
+    background-color: #222222; /* Latar belakang untuk tombol aktif */
+    color: white; /* Warna teks untuk tombol aktif */
+    border-color: #222222; /* Warna border untuk tombol aktif */
+  }
+  
+  
+  .categ-e{
+    border: 1px solid #ccc !important;
+    font-family: 'Poltawski Nowy';
+    width: 200px !important;
+    margin-right: 8px;
+    gap: 20px;
+    border-radius: 0 5px 5px 0 !important;
+    -webkit-border-radius: 0 5px 5px 0 !important;
+    -moz-border-radius: 0 5px 5px 0 !important;
+    -ms-border-radius: 0 5px 5px 0 !important;
+    -o-border-radius: 0 5px 5px 0 !important;
+  }
+  input:focus {
+    outline: none !important; /* Menghilangkan outline saat input difokuskan */
+    box-shadow: none; /* Menghilangkan bayangan jika ada */
+  }
+  input#search-employee:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .container input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  input:focus::after,
+  input:focus::before {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .categ-e:focus,.search-absensi:focus,.tahun-c:focus,
+  .form-select-gender:focus  {
+    font-family: 'Poltawski Nowy';
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #222222 !important; 
+  } 
+  .tahun-c{
+    border: 1px solid #ccc !important;
+    font-family: 'Poltawski Nowy';
+    width: 150px !important;
+    margin-right: 10px ;
+    display: flex;
+    background-color: #fff !important;
+  }
+  .tahun-c .icon {
+    font-family: 'Poltawski Nowy';
+    color: #fff !important; /* Warna ikon putih */
+    margin-left: 5px; /* Jarak antara teks dan ikon */
+  }
+  .button-pdf{
+    font-family: 'Poltawski Nowy' !important;
+    width: 25%;
+    height: 46px;
+    border: 1px solid #222222 !important;
+    background-color: #000 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sa-tpam{
+    font-family: 'Poltawski Nowy' !important;
+    font-weight: bold !important; 
+    font-size: 29px !important;
+  }
+  .search-container {
+    font-family: 'Poltawski Nowy';
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .search-absensi {
+    padding-left: 40px !important;
+    border-radius: 5px 0 0 5px !important;
+    -webkit-border-radius: 5px 0 0 5px !important;
+    -moz-border-radius: 5px 0 0 5px !important;
+    -ms-border-radius: 5px 0 0 5px !important;
+    -o-border-radius: 5px 0 0 5px !important;
+  }
+  
+  .search-icon {
+    color: #ccc !important;
+    font-family: 'Poltawski Nowy';
+    position: absolute; /* Memposisikan ikon secara absolut */
+    left: 10px; /* Jarak dari sisi kiri input */
+    top: 50%; /* Memposisikan ikon di tengah secara vertikal */
+    transform: translateY(-50%); /* Menyelaraskan ikon secara vertikal */
+    color: #999; /* Mengatur warna ikon */
+    font-size: 24px
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateY(10%); /* Mulai dari bawah */
+      opacity: 0; /* Tidak terlihat */
+    }
+    100% {
+      transform: translateY(0); /* Kembali ke posisi normal */
+      opacity: 1; /* Menjadi terlihat */
+    }
+  }
+  
+  .new-tab {
+    opacity: 1; /* Pastikan elemen ini terlihat */
+  }
+  
+  /* Tambahkan kelas slide-up untuk animasi */
+  .slide-up {
+    animation: slideIn 0.3s forwards; /* Terapkan animasi saat slide-up */
+  }
+  [data-theme="dark"] {
+    /* Dark mode colors */
+    --background-color: #1e1e1e;
+    --text-color: #ffffff;
+    --border-color: #444;
+    --table-header-bg: #2c2c2c;
+    --table-row-bg: #3b3b3b;
+    --table-hover-bg: #444444;
+    --search-bg: #333333;
+    --button-bg: #444444;
+    --button-text: #ffffff;
+    --button-outline-bg: #666666;
+  }
+  
+  .dark-mode .bulan-bt button {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  .dark-mode .bulan-bt button.active {
+    background-color: #ffffff;
+    color: #1e1e1e;
+  }

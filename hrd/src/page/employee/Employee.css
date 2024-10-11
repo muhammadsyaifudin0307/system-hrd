@@ -163,3 +163,52 @@
 .new-add {
   font-family: "Poltawski Nowy", serif;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.mdb-table {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.new-add {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.dark-mode .title-employee h1 e.text-employee {
+  border-color: #ffffff; /* Mengubah warna border menjadi putih */
+}
+.dark-mode .mdb-table {
+  background-color: #2a2a2a; /* Warna latar belakang tabel */
+  border-color: #444444; /* Warna border tabel */
+}
+
+.dark-mode .mdb-table th, 
+.dark-mode .mdb-table td {
+  background-color: #2a2a2a; /* Warna latar belakang sel tabel */
+  color: #ffffff; /* Warna teks sel tabel */
+}
+
+.dark-mode .mdb-table th {
+  background-color: #333333; /* Warna latar belakang header tabel */
+}
+.dark-mode .action-column {
+  color: #ffffff; /* Warna teks kolom aksi */
+}
+
+.dark-mode .btn-dark {
+  background-color: #555555; /* Warna tombol dark */
+  
+}
+

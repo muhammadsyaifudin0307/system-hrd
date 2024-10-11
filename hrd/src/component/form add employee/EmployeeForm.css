@@ -95,7 +95,7 @@ h2 {
   font-family: "Poltawski Nowy";
 }
 .label-alamat {
-  height: 140px;
+  height: 208px;
   padding: 10px;
   font-size: 16px;
   line-height: 1.5;
@@ -143,8 +143,8 @@ h2 {
 }
 
 .backgorund-input {
-  margin-top: -20px;
-  height: 740px;
+  margin-top: -40px;
+  height: 100%;
   width: 100%;
 }
 .nama-back {
@@ -157,7 +157,9 @@ h2 {
 .arrow-back {
   size: 20px;
 }
-
+.garis-hr{
+  margin-top: -15px;
+}
 
 .submit-button {
   font-family: "Poltawski Nowy";
@@ -167,4 +169,37 @@ h2 {
 }
 .judul-form {
   font-family: "Poltawski Nowy";
+}
+/* Jika belum ada pilihan, form group tampil penuh */
+.full-width {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Lebar penuh */
+  margin-bottom: 20px; /* Tambahkan margin agar lebih rapi */
+}
+
+/* Jika ada pilihan, form group tampil sebagai kolom */
+.column-width {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Lebar berubah menjadi kolom */
+  margin-bottom: 20px; /* Tambahkan margin agar lebih rapi */
+}
+
+.form-label {
+  margin-bottom: 5px;
+}
+
+.form-select {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.dark-mode .slide-up-form{
+  background-color: #222222;
+}
+
+.dark-mode .submit-button{
+background-color: #fff;
+color: #000;
 }

@@ -9,10 +9,8 @@ const PopupDetail = ({ employeeData, closePopup }) => {
     return (
     <Modal show onHide={closePopup} centered size="xl" dialogClassName='modal-dialog'>
     <Modal.Header className='modal-header d-flex align-items-center'>
-        {/* Icon Section */}
         <TbUserCircle className='text-light ms-3' style={{ fontSize: '100px' }} />
         
-        {/* Info Section */}
         <div className='ms-4'>
             <h4 className='mb-1'>{employeeData.name}</h4>
             <p className='mb-0'>
@@ -52,29 +50,37 @@ const PopupDetail = ({ employeeData, closePopup }) => {
                 <Col md={12}>
                     <h5 className="mt-2">Details</h5>
                     <Row className="border rounded-2">
-                        {/* Kelompok Kontrak dan Kerja */}
                         <Col md={6} className="p-3 border-end">
                             <Row>
-                                <Col md={6}>
+                                <Col md={4}>
                                     <p><strong>Awal Kontrak:</strong></p>
                                     <p>{employeeData.contractStart}</p>
                                 </Col>
-                                <Col md={6}>
+                                <Col md={4}>
                                     <p><strong>Akhir Kontrak:</strong></p>
                                     <p>{employeeData.contractEnd}</p>
                                 </Col>
-                                <Col md={6}>
+                                <Col md={4}>
+                                    <p><strong>KJP:</strong></p>
+                                    <p>{employeeData.kjp}</p>
+                                </Col>
+                                <Col md={4}>
                                     <p><strong>Mulai Kerja:</strong></p>
                                     <p>{employeeData.workStart}</p>
                                 </Col>
-                                <Col md={6}>
+
+                                <Col md={4}>
                                     <p><strong>Akhir Kerja:</strong></p>
                                     <p>{employeeData.workEnd}</p>
                                 </Col>
+                                
+                                <Col md={4}>
+                                    <p><strong>Kode Bag:</strong></p>
+                                    <p>{employeeData.kodeBag}</p>
+                                </Col>
                             </Row>
                         </Col>
-
-                        {/* Kelompok Status, Jenis, Kontrak Ke, Bpjs, dll */}
+   
                         <Col md={6} className='p-3'>
                             <Row>
                                 <Col md={3}>
@@ -139,6 +145,9 @@ PopupDetail.propTypes = {
         workEnd: PropTypes.string.isRequired,
         contractStatus: PropTypes.string.isRequired,
         contractDetails: PropTypes.string.isRequired,
+        kjp: PropTypes.string.isRequired, // Tambahkan ini
+        kodeBag: PropTypes.string.isRequired, // Tambahkan ini        }),
+        
     }).isRequired,
     closePopup: PropTypes.func.isRequired,
 };

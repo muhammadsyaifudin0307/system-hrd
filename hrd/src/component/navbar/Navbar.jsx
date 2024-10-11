@@ -8,8 +8,12 @@ import { PiUserCircleLight } from 'react-icons/pi';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
+import PropTypes from 'prop-types';
 
-function NavbarD({ setIsLoggedIn }) {  // Terima setIsLoggedIn sebagai prop
+function NavbarD({ setIsLoggedIn }) {
+NavbarD.propTypes = {
+  setIsLoggedIn: PropTypes.func.isRequired,
+};  // Terima setIsLoggedIn sebagai prop
   const [darkMode, setDarkMode] = useState(false);
   const location = useLocation(); // Hook untuk mendapatkan lokasi saat ini
   const navigate = useNavigate();
@@ -47,9 +51,9 @@ function NavbarD({ setIsLoggedIn }) {  // Terima setIsLoggedIn sebagai prop
           <Nav className='me-auto nav-list'>
             <Nav.Link as={Link} to='/dasboard' className={getNavLinkClass('/dasboard')}>Home</Nav.Link>
             <Nav.Link as={Link} to='/employee' className={getNavLinkClass('/employee')}>Employee</Nav.Link>
-            <Nav.Link as={Link} to='/absensi' className={getNavLinkClass('/absensi')}>Absensi</Nav.Link>
-            <Nav.Link as={Link} to='/gajian' className={getNavLinkClass('/gajian')}>Pengajian</Nav.Link>
-            <Nav.Link as={Link} to='/recruitment' className={getNavLinkClass('/recruitment')}>Dokumen</Nav.Link>
+            <Nav.Link as={Link} to='/absensi' className={getNavLinkClass('/absensi')}>Attendance</Nav.Link>
+            <Nav.Link as={Link} to='/salary' className={getNavLinkClass('/salary')}>Salary</Nav.Link>
+            <Nav.Link as={Link} to='/documentemployee' className={getNavLinkClass('/documentemployee')}>Document</Nav.Link>
           </Nav>
           <Nav>
             <div className='d-flex align-items-center'>

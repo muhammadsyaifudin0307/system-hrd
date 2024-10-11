@@ -46,7 +46,7 @@ const DashboardEmployee = () => {
                       </ul>
                     </Col>
                   </Row>
-                  <div className='chart-placeholder mt-4' style={{ maxHeight: '200px' }}>
+                  <div className='chart-placeholder mt-2' style={{ maxHeight: '200px' }}>
                     <ChartBagian />
                   </div>
                 </Card.Body>
@@ -59,10 +59,11 @@ const DashboardEmployee = () => {
                   <div className='line'></div>
                   <div className='d-flex justify-content-between align-items-center'>
                     <Card.Title className='text-start fs-5 fw-bold'>Data Karyawan Menurut Lokasi <br /> Tinggal</Card.Title>
-                    <p className='mb-0 ms-2'>
-                      <span className='total-text'>Total</span>
+                    <p className='mb-0 ms-2 text-center'>
+                      <span className='total-text d-block'>Total</span>
                       <span className='display-6 total fs-2'>388</span>
                     </p>
+
                   </div>
                   <Row>
                     <Col>

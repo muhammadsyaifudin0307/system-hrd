@@ -7,7 +7,7 @@
 .nav-brand {
   font-family: "Poly", serif;
   font-weight: 400;
-  font-size: 30px !important;
+  font-size: 40px !important;
   margin-left: -55px;
 }
 .icon-nav {
@@ -74,6 +74,7 @@
 }
 
 .nav-list .nav-link.active::after {
+  height: 2px;
   background: #000; /* Ganti dengan warna untuk link aktif */
   transform: scaleX(1); /* Pastikan skala aktif tetap 1 */
 }

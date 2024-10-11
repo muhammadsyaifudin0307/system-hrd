@@ -1,5 +1,4 @@
 
-
 import { useState } from 'react';
 import { MDBTable, MDBTableHead, MDBTableBody, MDBIcon } from 'mdb-react-ui-kit';
 import { GoPencil, GoTrash } from "react-icons/go";
@@ -7,9 +6,8 @@ import { CiSearch } from "react-icons/ci";
 import { GoFilter } from "react-icons/go";
 import "./Employee.css";
 import { BsInfoCircle } from "react-icons/bs";
-import EmployeeForm from './Form'; // Mengimpor EmployeeForm
-import PopupDetail from './PopUpDetail';
-
+import EmployeeForm from '../../component/form add employee/Form'; // Mengimpor EmployeeForm
+import PopupDetail from '../../component/modal detail/PopupDetail';
 const EmployeeTable = () => {
     const [showForm, setShowForm] = useState(false); // State untuk mengatur tampilan form
     const [currentPage, setCurrentPage] = useState(1); // State untuk halaman saat ini
@@ -71,12 +69,14 @@ const EmployeeTable = () => {
         workEnd: '01-01-2023',
         contractStatus: 'Aktif',
         contractDetails: 'Tidak ada keterangan',
+        kodeBag: 'Tidak ada keterangan',
+        kjp: 'Tidak ada keterangan',
     };
 
     return (
         <div className="container mt-5">
             <div className='title-employee' >
-                <h1 className='d-inline-block border-bottom border-2 border-black pb-1' >Employee</h1>
+                <h1 className='text-employe d-inline-block border-bottom border-2 border-black pb-1' >Employee</h1>
             </div>
 
             <div className="input-group mb-2 search-input">
@@ -125,12 +125,12 @@ const EmployeeTable = () => {
                             <td style={{ fontFamily: "'Inter'" }}>Lamongan</td>
                             <td>
                                 <span style={{ marginRight: '10px' }}>
-                                    <GoPencil className='fs-4 text-dark' />
+                                    <GoPencil className='fs-4 icon-action' />
                                 </span>
                                 <span style={{ marginRight: '10px' }}>
-                                    <GoTrash className='fs-4 text-dark' />
+                                    <GoTrash className='fs-4 icon-action' />
                                 </span>
-                                < BsInfoCircle className='fs-4 text-dark' onClick={() => handleShowDetail(employee)} style={{ cursor: 'pointer' }} />
+                                < BsInfoCircle className='fs-4 icon-action' onClick={() => handleShowDetail(employee)} style={{ cursor: 'pointer' }} />
                             </td>
                         </tr>
                     ))}

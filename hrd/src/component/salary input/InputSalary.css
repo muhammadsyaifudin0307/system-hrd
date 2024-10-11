@@ -1,0 +1,28 @@
+.add-salary-btn{
+    width: 10rem;
+
+}
+
+.dark-mode .btn-dark {
+    background-color: #6c757d; /* Dark button color */
+    border: none; /* Remove border */
+}
+
+.dark-mode .btn-secondary {
+    background-color: #495057; /* Dark secondary button color */
+    border: none; /* Remove border */
+}
+
+.dark-mode .mdb-table {
+    background-color: #495057; /* Dark table background */
+    color: #ffffff; /* Dark table text color */
+}
+
+.dark-mode .name-table th {
+    background-color: #6c757d; /* Dark header background */
+    color: #ffffff; /* Dark header text color */
+}
+
+.dark-mode .action-btn span {
+    color: #fff !important; /* Ganti warna ikon jadi putih pada dark mode */
+}

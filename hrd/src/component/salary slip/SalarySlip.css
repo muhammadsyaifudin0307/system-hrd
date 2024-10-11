@@ -1,0 +1,95 @@
+.btn-add-info{
+cursor: pointer;
+
+}
+.btn-print{
+height: 2.77rem;
+width: 5.8rem;
+
+}
+
+/* Tabel dengan dark mode */
+.dark-mode .table-salary {
+    background-color: #242424 !important; /* Background tabel */
+    color: #E0E0E0 !important; /* Teks dalam tabel */
+    border-color: #444444 !important; /* Border warna */
+}
+
+/* Header tabel */
+.dark-mode .table-salary thead th {
+    background-color: #333333 !important; /* Background header tabel */
+    color: #E0E0E0 !important; /* Teks header */
+    border-bottom: 1px solid #444444 !important; /* Border bawah header */
+}
+
+/* Baris tabel */
+.dark-mode .table-salary tbody tr {
+    background-color: #1F1F1F !important; /* Warna baris */
+    color: #E0E0E0 !important; /* Teks di dalam baris */
+}
+
+.dark-mode .table-salary tbody tr:nth-child(even) {
+    background-color: #2A2A2A !important; /* Warna baris genap */
+}
+
+/* Sel dalam tabel */
+.dark-mode .table-salary td, .dark-mode .table-salary th {
+    border-color: #444444 !important; /* Warna garis batas antar sel */
+    padding: 8px !important;
+    vertical-align: middle !important;
+}
+.dark-mode .btn-print {
+    background-color: #333333 !important;
+    color: #E0E0E0 !important;
+}
+
+.dark-mode .btn-print:hover {
+    background-color: #444444 !important;
+}
+
+.dark-mode .btn-add-info {
+    color: #444444 !important;
+}
+
+.dark-mode .btn-add-info:hover {
+    color: #333333 !important;
+}
+
+.dark-mode .btn-link {
+    color: #BB86FC !important;
+}
+
+.dark-mode .btn-link.active, .dark-mode .btn-link:hover {
+    color: #FFFFFF !important;
+}
+
+.dark-mode .custom-select {
+    background-color: #2A2A2A !important;
+    color: #E0E0E0 !important;
+    border: 1px solid #444444 !important;
+}
+
+.dark-mode .custom-select option {
+    background-color: #333333 !important;
+    color: #E0E0E0 !important;
+}
+
+.dark-mode .modal-content {
+    background-color: #242424 !important;
+    color: #E0E0E0 !important;
+}
+
+.dark-mode .modal-header .btn-close {
+    background-color: #333333 !important;
+    color: #E0E0E0 !important;
+}
+
+.dark-mode .modal-footer .btn {
+    background-color: #333333 !important;
+    color: #E0E0E0 !important;
+    border: none !important;
+}
+
+.dark-mode .modal-footer .btn:hover {
+    background-color: #444444 !important;
+}
